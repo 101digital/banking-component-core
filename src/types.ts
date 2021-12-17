@@ -39,6 +39,19 @@ export interface Bank {
   accreditedDataRecipientId: string;
   customerFacing: boolean;
   creditScoreSupported: boolean;
+  permissions: BankPermission[];
+  openBankingId: string
+}
+
+export interface BankPermission {
+  countryCode: string;
+  description: string;
+  id: string;
+  ordinal: number;
+  permissionCode: string;
+  permissionGroup: string;
+  permissionTitle: string;
+  shortDescription: string;
 }
 
 export interface Paging {
@@ -153,4 +166,27 @@ export interface CashflowPeriod {
   totalMoneyOut: number;
   from: string;
   to: string;
+}
+
+export interface GroupAccountConsent {
+  section: string;
+  data: AccountConsent[]
+}
+export interface AccountConsent {
+  accountConsentId: string;
+  accountRequestId: string;
+  createdAt: string;
+  expiredAt: string;
+  organisationId: string;
+  status: string;
+  userId: string;
+  consentData: ConsentData;
+  aspspInfo: Bank
+}
+
+export interface ConsentData {
+  AccountRequestId: string;
+  ConsentId: string;
+  Permissions: string[];
+  Status: string;
 }
