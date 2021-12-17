@@ -23,7 +23,7 @@ Core utilities for building banking component
 Open a Terminal in your project's folder and run the command
 
 ```sh
-yarn add https://gitpkg.now.sh/101digital/react-native-banking-components/packages/core
+yarn add https://github.com/101digital/banking-component-core.git
 ```
 
 - Installed [react-native-theme-component](https://github.com/101digital/react-native-theme-component.git)
