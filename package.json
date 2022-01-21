@@ -2,16 +2,13 @@
   "name": "@banking-component/core",
   "private": true,
   "description": "Core utilities for building banking component",
-  "version": "1.1.17",
+  "version": "1.1.18",
   "repository": {
     "type": "git",
     "url": "https://github.com/101digital/banking-component-core.git"
   },
   "main": "index.js",
   "types": "index.d.ts",
-  "files": [
-    "src"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
